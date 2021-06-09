@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihar's Musical Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('images/bg.jpg');
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .leftbox {
+            color: whitesmoke;
+            /* border-style: groove; */
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            width: 8%;
+            text-align: center;
+
+        }
+
+        .rightbox {
+
+            /* border-style: groove; */
+            border-color: white;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            padding-left: 4px;
+            font-family: 'Nerko One', cursive;
+        }
+
+        .midbox {
+            color: whitesmoke;
+            /* border-style: groove; */
+            border-color: white;
+            display: block;
+            position: absolute;
+            width: 33%;
+            margin-left: 500px;
+            top: 12px;
+            font-size: 18px;
+        }
+
+        .navbar li {
+            color: white;
+            display: inline-block;
+            padding-left: 10px;
+
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .navbar li a:hover {
+            color: fuchsia;
+            text-decoration: underline;
+        }
+
+        img {
+            width: 80%;
+        }
+
+        .btn {
+            padding-left: 10px;
+            color: ghostwhite;
+            background-color: transparent;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .btn:hover {
+            color: fuchsia;
+
+        }
+
+        .article {
+            /* border-style: groove; */
+            color: white;
+            margin-top: 205px;
+            width: 64%;
+            margin-left: 191px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 39px;
+            font-family: 'Libre Baskerville', serif;
+
+        }
+        .article input
+        {
+            font-family: 'Libre Baskerville', serif;
+            width: 50%;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        .article button
+        {
+            margin-left: 70px;
+        }
+        .article h3{
+            margin-left: 60px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!--So today we are going to design our 1st website as our project-->
+    <header class="header">
+        <div class="leftbox">
+            <img src="images/logo-2287665_1920.png" alt="">
+            Nihar's Musical Gallery
+
+        </div>
+        <div class="midbox">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home&nbsp;</a></li>
+                    <li><a href="#">About&nbsp;</a></li>
+                    <li><a href="#">Instruments&nbsp;</a></li>
+                    <li><a href="#">Songs&nbsp;</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="rightbox">
+            <button class="btn">
+                Video tutorials
+            </button>
+            <button class="btn">
+                Suggestions
+            </button>
+        </div>
+    </header>
+    <article class="article">
+        <h3>The Song Finder </h3>
+        <form action="noend.php"></form>
+        <div class="input">
+            Album:<input type="text" placeholder="Enter the album name"><br>
+            Genre:<input type="text" placeholder="Enter the genre name"><br>
+          SongNo:<input type="number" placeholder="Enter the song no"><br>
+            Artist:<input type="text" placeholder="Enter the artist name"><br>
+            <br><button class="btn">Submit</button>
+        </div>
+    </article>
+
+
+</body>
+
+</html>
